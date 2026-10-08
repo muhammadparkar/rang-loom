@@ -20,7 +20,6 @@ import {
   Check,
 } from "@phosphor-icons/react";
 import { products, money, type Product } from "./catalog";
-import RangLoomLogo from "./components/RangLoomLogo";
 
 type BagItem = { slug: string; quantity: number };
 const categories = ["All pieces", "Cushions", "Bedding", "Throws", "Curtains"];
@@ -183,9 +182,7 @@ export default function Storefront({ product }: { product?: Product }) {
   return (
     <>
       <div className="announcement">
-        <span>
-          THE BLOOM &amp; WEAVE — A MODERN EMBLEM OF COLOUR AND CRAFT
-        </span>
+        Thoughtfully made. Beautifully lived in.{" "}
         <span>
           Complimentary shipping on orders above ₹5,000 <ArrowRight size={13} />
         </span>
@@ -193,7 +190,7 @@ export default function Storefront({ product }: { product?: Product }) {
       <div className="sticky-navigation">
         <header className="header">
           <div className="header-side">
-            <span className="desktop-note">More than textiles — it&apos;s a feeling</span>
+            <span className="desktop-note">Textiles with a soul.</span>
             <button
               className="mobile-menu icon-button"
               aria-label="Open menu"
@@ -202,8 +199,8 @@ export default function Storefront({ product }: { product?: Product }) {
               <List size={23} />
             </button>
           </div>
-          <Link className="wordmark" href="/" aria-label="Rang & Loom Home">
-            <RangLoomLogo variant="horizontal" size={48} />
+          <Link className="wordmark" href="/">
+            RANG <em>&</em> LOOM<span>THE ART OF FEELING AT HOME</span>
           </Link>
           <div className="header-actions">
             <button
@@ -353,7 +350,7 @@ export default function Storefront({ product }: { product?: Product }) {
             <section className="hero">
               <div className="hero-copy">
                 <div className="eyebrow">
-                  <span className="tiny-line" /> MORE THAN TEXTILES — IT&apos;S A FEELING
+                  <span className="tiny-line" /> A HOME, MORE YOU
                 </div>
                 <h1>
                   The art of
@@ -361,9 +358,9 @@ export default function Storefront({ product }: { product?: Product }) {
                   living <em>softly.</em>
                 </h1>
                 <p>
-                  Celebrating the vibrant beauty of colour and the timelessness of craft.
+                  Thoughtful textures. Timeless design.
                   <br />
-                  Inspired by traditional weaving heritage for contemporary living.
+                  Beautiful things for the everyday.
                 </p>
                 <button
                   className="primary"
@@ -372,7 +369,7 @@ export default function Storefront({ product }: { product?: Product }) {
                   Explore the collection <ArrowRight size={19} />
                 </button>
                 <div className="hero-footnote">
-                  THE BLOOM &amp; WEAVE · ROOTED IN CRAFT
+                  ROOTED IN CRAFT. MADE FOR LIVING.
                 </div>
               </div>
               <div className="hero-image">
@@ -399,16 +396,16 @@ export default function Storefront({ product }: { product?: Product }) {
             </section>
             <div className="values-strip">
               <span>
-                <HandHeart size={22} weight="light" /> Warmth &amp; Energy
+                <HandHeart size={22} weight="light" /> Made with care
               </span>
               <span>
-                <Leaf size={22} weight="light" /> Nature &amp; Balance
+                <Leaf size={22} weight="light" /> Natural, beautiful materials
               </span>
               <span>
-                <span className="woven-mark">✳</span> Luxury &amp; Elegance
+                <span className="woven-mark">✳</span> Timeless by design
               </span>
               <span>
-                <Truck size={23} weight="light" /> Trust &amp; Sophistication
+                <Truck size={23} weight="light" /> Delivered with love
               </span>
             </div>
             <section className="collections section" id="collections">
@@ -463,16 +460,16 @@ export default function Storefront({ product }: { product?: Product }) {
                 ))}
               </div>
             </section>
-
             <section className="editorial-banner">
-              <span className="eyebrow">MORE THAN TEXTILES — IT&apos;S A FEELING</span>
+              <span className="eyebrow">LESS, BUT LOVELIER</span>
               <p>
                 Not just how your home looks.
                 <br />
                 <em>How it makes you feel.</em>
               </p>
               <span>
-                The Bloom &amp; Weave · A Modern Emblem of Colour and Craft
+                Pieces to live with. Textures to fall in love with. A home that
+                feels like you.
               </span>
             </section>
           </>
@@ -519,25 +516,21 @@ export default function Storefront({ product }: { product?: Product }) {
             />
           </div>
           <div className="story-copy">
-            <span className="eyebrow">
-              <span className="tiny-line" /> 01. BRAND OVERVIEW
-            </span>
+            <span className="eyebrow">THE THREAD THAT CONNECTS US</span>
             <h2>
-              The Bloom &amp; Weave.
+              A little of our story.
               <br />
-              <em>A modern emblem of colour and craft.</em>
+              <em>A part of your home.</em>
             </h2>
             <p>
-              Rang &amp; Loom is a home textiles and soft furnishings brand that
-              celebrates the vibrant beauty of colour and the timelessness of craft.
-              Inspired by traditional weaving heritage, our identity brings together
-              modern aesthetics and a sense of warmth, comfort and character for
-              contemporary living spaces.
+              Rang means colour. Loom is where it all begins. Together, they
+              tell our story — a love for honest materials, thoughtful design,
+              and the quiet beauty of a well-loved home.
             </p>
             <p>
-              Rang means colour. Loom is where it all begins. Together, they
-              tell our story — honest materials, thoughtful design, and the
-              quiet beauty of a well-loved home.
+              We believe the most beautiful spaces are the ones that feel
+              personal. So we create pieces that bring warmth, character, and a
+              little soul to yours.
             </p>
             <a className="text-link" href="#journal">
               Discover our world <ArrowRight size={19} />
@@ -575,10 +568,10 @@ export default function Storefront({ product }: { product?: Product }) {
       <footer>
         <div className="footer-top">
           <div>
-            <Link className="wordmark" href="/" aria-label="Rang & Loom Home">
-              <RangLoomLogo variant="reversed-horizontal" size={44} />
+            <Link className="wordmark" href="/">
+              RANG <em>&</em> LOOM
             </Link>
-            <p>More than textiles — it&apos;s a feeling.</p>
+            <p>A softer way to live.</p>
           </div>
           <div className="newsletter">
             <h3>A little inspiration, delivered.</h3>
