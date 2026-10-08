@@ -18,6 +18,7 @@ import {
   Truck,
   InstagramLogo,
   Check,
+  Asterisk,
 } from "@phosphor-icons/react";
 import { products, money, type Product } from "./catalog";
 
@@ -199,8 +200,16 @@ export default function Storefront({ product }: { product?: Product }) {
               <List size={23} />
             </button>
           </div>
-          <Link className="wordmark" href="/">
-            RANG <em>&</em> LOOM<span>THE ART OF FEELING AT HOME</span>
+          <Link className="wordmark" href="/" aria-label="Rang & Loom">
+            <Image
+              src="/images/rang-loom-logo.png"
+              alt="Rang & Loom - Home Textiles & Soft Furnishings"
+              width={260}
+              height={44}
+              priority
+              loading="eager"
+              className="wordmark-img"
+            />
           </Link>
           <div className="header-actions">
             <button
@@ -378,6 +387,7 @@ export default function Storefront({ product }: { product?: Product }) {
                   alt="Sunlit living room with natural linen cushions, a soft woven throw and cream curtains"
                   fill
                   priority
+                  loading="eager"
                   sizes="(max-width: 700px) 100vw, 65vw"
                 />
                 <div className="image-caption">
@@ -402,7 +412,7 @@ export default function Storefront({ product }: { product?: Product }) {
                 <Leaf size={22} weight="light" /> Natural, beautiful materials
               </span>
               <span>
-                <span className="woven-mark">✳</span> Timeless by design
+                <Asterisk size={22} weight="light" /> Timeless by design
               </span>
               <span>
                 <Truck size={23} weight="light" /> Delivered with love
@@ -568,8 +578,14 @@ export default function Storefront({ product }: { product?: Product }) {
       <footer>
         <div className="footer-top">
           <div>
-            <Link className="wordmark" href="/">
-              RANG <em>&</em> LOOM
+            <Link className="wordmark" href="/" aria-label="Rang & Loom">
+              <Image
+                src="/images/rang-loom-logo.png"
+                alt="Rang & Loom - Home Textiles & Soft Furnishings"
+                width={230}
+                height={39}
+                className="wordmark-img"
+              />
             </Link>
             <p>A softer way to live.</p>
           </div>

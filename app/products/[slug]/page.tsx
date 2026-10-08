@@ -4,6 +4,8 @@ import { products } from "../../catalog";
 export function generateStaticParams() {
   return products.map(({ slug }) => ({ slug }));
 }
+
+export const instant = false;
 export async function generateMetadata({
   params,
 }: {
